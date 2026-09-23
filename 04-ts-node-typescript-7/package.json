@@ -1,0 +1,16 @@
+{
+  "name": "repro-ts-node-typescript-7",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "repro": "ts-node src/index.ts",
+    "api": "node -e \"const ts=require('typescript');console.log(ts.version, Object.keys(ts).length+' exports', 'sys='+typeof ts.sys)\"",
+    "fixed-ts6": "npm i -D typescript@6.0.3 --no-audit --no-fund --loglevel=error && ts-node src/index.ts",
+    "fixed-tsx": "npx --yes tsx@4 src/index.ts",
+    "fixed-node": "node src/index.ts"
+  },
+  "devDependencies": {
+    "ts-node": "10.9.2",
+    "typescript": "7.0.2"
+  }
+}

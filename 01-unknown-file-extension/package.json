@@ -1,0 +1,11 @@
+{
+  "name": "repro-unknown-file-extension",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "repro": "npx --yes node@20.19.4 src/index.ts",
+    "fixed-node": "node src/index.ts",
+    "fixed-tsx": "npx --yes tsx@4 src/index.ts"
+  }
+}

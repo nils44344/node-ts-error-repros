@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "target": "es2022",
+    "strict": true,
+    "erasableSyntaxOnly": true,
+    "noEmit": true
+  },
+  "include": [
+    "src/broken.ts"
+  ]
+}

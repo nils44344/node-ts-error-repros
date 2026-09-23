@@ -1,0 +1,15 @@
+{
+  "name": "repro-err-module-not-found",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "imports": {
+    "#lib/*": "./src/*"
+  },
+  "scripts": {
+    "repro": "node src/app.js",
+    "repro-dir": "node src/dir.js",
+    "fixed": "node src/app-fixed.js",
+    "fixed-imports": "node src/app-imports.js"
+  }
+}

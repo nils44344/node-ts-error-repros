@@ -1,0 +1,15 @@
+{
+  "name": "repro-erasable-syntax-only",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "repro": "tsc -p .",
+    "repro-runtime": "node src/broken.ts",
+    "fixed": "node src/fixed.ts",
+    "fixed-check": "tsc --erasableSyntaxOnly --strict --noEmit --module nodenext src/fixed.ts"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
