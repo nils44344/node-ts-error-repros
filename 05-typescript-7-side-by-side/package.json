@@ -1,0 +1,24 @@
+{
+  "name": "repro-typescript-7-side-by-side",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "check": "tsc --version && node -e \"const t=require('typescript');console.log('require(typescript) ->', t.version, '| ts.sys:', typeof t.sys)\"",
+    "ts-node": "ts-node src/index.ts",
+    "webpack": "webpack --config webpack.config.cjs",
+    "lint": "eslint src",
+    "all": "npm run check && npm run ts-node && npm run webpack && npm run lint",
+    "break": "npm install -D typescript@7.0.2 --force --no-audit --no-fund --loglevel=error",
+    "restore": "npm install -D \"@typescript/native@npm:typescript@7.0.2\" \"typescript@npm:@typescript/typescript6@^6.0.2\" --no-audit --no-fund --loglevel=error && node -e \"require('fs').rmSync('node_modules',{recursive:true,force:true})\" && npm install --no-audit --no-fund --loglevel=error"
+  },
+  "devDependencies": {
+    "@typescript/native": "npm:typescript@^7.0.2",
+    "eslint": "10.11.0",
+    "ts-loader": "9.6.2",
+    "ts-node": "10.9.2",
+    "typescript": "npm:@typescript/typescript6@^6.0.2",
+    "typescript-eslint": "8.70.1",
+    "webpack": "5.111.1",
+    "webpack-cli": "^6"
+  }
+}

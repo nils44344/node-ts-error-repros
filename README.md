@@ -12,6 +12,7 @@ fix, what didn't work, and the versions it was checked on.
 | 02 | `Error [ERR_MODULE_NOT_FOUND]: Cannot find module` | `npm run repro` | [Read](https://nilaykabariya.blog/fixes/err-module-not-found-cannot-find-module-esm) |
 | 03 | `error TS1294: This syntax is not allowed when 'erasableSyntaxOnly' is enabled` | `npm run repro` | [Read](https://nilaykabariya.blog/fixes/erasablesyntaxonly-syntax-not-allowed-ts1294) |
 | 04 | `TypeError: Cannot read properties of undefined (reading 'fileExists')` (ts-node + TypeScript 7) | `npm run repro` | [Read](https://nilaykabariya.blog/fixes/ts-node-cannot-read-properties-of-undefined-fileexists) |
+| 05 | TypeScript 7 side-by-side setup: ts-node, ts-loader and typescript-eslint working with `tsc` 7 | `npm run all` | [Read](https://nilaykabariya.blog/tested/typescript-7-compatibility-tools-tested) |
 
 ## How to use
 
